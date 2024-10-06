@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Chemistry flasks</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="center-container">
+  <div class="center-wrapper">
+    <div class="container">
+      <div id="matrazShe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <style>.st3,.st4{fill:#9c5450;stroke:#9c5450;stroke-width:.25;stroke-miterlimit:10}.st4{fill:none}</style>
+
+          <path id="matraz-body" 
+                d="M20.6 4.3v17.1S12.8 39.6 10 44.3c-.5.9-.9 2.3-.4 3.2.2.4.8.8 1.1 1.1.4.4 1 .4 1.6.4h27.6c1.9-.1 3-2 2.3-3.7L30.6 21.4V4.3" 
+                fill="none" stroke="#60503e" stroke-miterlimit="10"/>
+          <path id="matraz-liquid" 
+                d="M38.6 46.3H12.5c-.5 0-.8-.5-.6-.9l10.9-23.1c.1-.3.2-.6.2-.9V18h5.3v3.4c0 .3.1.6.2.9l10.9 22.9c.2.5-.2 1.1-.8 1.1z" 
+                fill="#f57782"/>
+          
+          <clipPath id="matraz-liquid-clip">
+            <use xlink:href="#matraz-liquid"/>
+          </clipPath>
+          <use clip-path="url(#matraz-liquid-clip)" xlink:href="#matraz-liquid"/>
+          
+          <g id="bubbles" stroke-width="0" fill="#FFF" opacity="1" clip-path="url(#matraz-liquid-clip)">
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+          </g>
+          
+          <g id="left-eye">
+            <circle class="st3" cx="18.8" cy="41.9" r="1.1"/>
+            <path class="st4" d="M16.8 41.1l.9.9"/>
+          </g>
+          <g id="right-eye">
+            <circle class="st3" cx="32.2" cy="41.9" r="1.1"/>
+            <path class="st4" d="M34.2 41.1l-1 .9"/>
+          </g>
+          <path id="mouth" d="M24.5 41.6c0 1.3 2.4 1.3 2.4 0" 
+                fill="none" stroke="#9c5450" stroke-width=".5" stroke-miterlimit="10" />
+        </svg>
+      </div>
+      <div id="matrazHe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <style>.st3,.st4{fill: #584a3a; stroke: #584a3a; stroke-width: .25; stroke-miterlimit: 10;}.st4{fill:none}</style>
+
+          <path id="matraz-body" 
+                d="M20.6 4.3v17.1S12.8 39.6 10 44.3c-.5.9-.9 2.3-.4 3.2.2.4.8.8 1.1 1.1.4.4 1 .4 1.6.4h27.6c1.9-.1 3-2 2.3-3.7L30.6 21.4V4.3" 
+                fill="none" stroke="#60503e" stroke-miterlimit="10"/>
+          <path id="matraz-liquid-g" 
+                d="M38.6 46.3H12.5c-.5 0-.8-.5-.6-.9l10.9-23.1c.1-.3.2-.6.2-.9V18h5.3v3.4c0 .3.1.6.2.9l10.9 22.9c.2.5-.2 1.1-.8 1.1z" 
+                fill="#58c2ab"/>
+          
+          <clipPath id="matraz-liquid-clip">
+            <use xlink:href="#matraz-liquid-g"/>
+          </clipPath>
+          <use clip-path="url(#matraz-liquid-clip)" xlink:href="#matraz-liquid-g"/>
+          
+          <g id="bubbles" stroke-width="0" fill="#FFF" opacity="1" clip-path="url(#matraz-liquid-clip)">
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+            <rect x="20" y="38" width="1" height="1" />
+          </g>
+
+          <g id="left-eye">
+            <circle class="st3" cx="18.8" cy="41.9" r="1.1"/>
+          </g>
+          <g id="right-eye">
+            <circle class="st3" cx="32.2" cy="41.9" r="1.1"/>
+          </g>
+          <path id="mouth" d="M24.5 41.6c0 1.3 2.4 1.3 2.4 0" 
+                fill="none" stroke="#584a3a" stroke-width=".5" stroke-miterlimit="10" />
+          <circle id="mouth-open" class="st3" cx="25.7" cy="42.2" r="1.1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn-container">
+  <button id="jump-btn" onclick="jump()">Look at me</button>
+  <button id="kiss-btn" onclick="kissing()">Kiss me</button>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
